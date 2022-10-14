@@ -1,0 +1,173 @@
+.cabecalhoPrincipal .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.cabecalhoPrincipal-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.rodapePrincipal-patrocinadores .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24px 0;
+  margin: none;
+}
+
+.rodapePrincipal-patrocinadores-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+  width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+  display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.lista-cursos {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudoPrincipal-cursos {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px 0;
+}
+
+.conteudoPrincipal-cursos-link {
+  width: 23%;
+}
+
+.videoSobre .container {
+  display: flex;
+  padding: 24px 0;
+}
+
+.videoSobre-sobre {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.videoSobre-sobre-list {
+  flex-grow: 1;
+}
+
+.videoSobre-video {
+  flex-grow: 1;
+  flex-shrink: 2;
+}
+
+/*Área mobile*/
+
+@media (max-width: 820px) {
+
+  .cabecalhoPrincipal-nav {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .lista-cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    align-items: center;
+  }
+
+  .cabecalhoPrincipal .container {
+    flex-direction: column;
+    align-items: initial;
+    text-align: center;
+  }
+
+  .conteudoPrincipal-cursos {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 24px 0;
+  }
+
+  .conteudoPrincipal-cursos-link {
+    align-items: initial;
+    text-align: center;
+    width: 100%;
+  }
+
+
+  .rodapePrincipal-navMap-list {
+    flex-direction: column;
+  }
+
+  .rodapePrincipal {
+    padding-top: 40px;
+  }
+
+  .videoSobre .container {
+    flex-direction: column;
+    padding: 24px 0;
+  }
+
+  .videoSobre-video {
+    margin: 0 auto;
+  }
+
+  .videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 42px;
+    flex-grow: 10;
+  }
+
+  .videoSobre-button {
+    flex-grow: 1;
+    margin-top: 24px;
+  }
+
+  .rodapePrincipal-patrocinadores-list {
+    margin: 0;
+    width: 100%;
+  }
+
+  .rodapePrincipal-contatoForm {
+    width: 100%;
+    padding-right: 24px;
+  }
+
+  fieldset {
+    padding: 0 16%;
+  }
+
+  .rodapePrincipal-patrocinadores .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rodapePrincipal-contatoForm-fieldset {
+    justify-content: center;
+  }
+
+  .rodapePrincipal-contatoForm-legend {
+    text-align: center;
+  }
+
+}
